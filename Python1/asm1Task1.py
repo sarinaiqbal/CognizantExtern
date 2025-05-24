@@ -1,6 +1,6 @@
 """
 Author: Sarina Iqbal
-Assignment 1 Task 2
+Assignment 1 Task 1
 """
 
 name = "Jessica"
