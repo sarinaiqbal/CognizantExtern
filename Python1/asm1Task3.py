@@ -1,6 +1,6 @@
 """
 Author: Sarina Iqbal
-Assignment 1 Task 2
+Assignment 1 Task 3
 """
 
 number = int(input("Enter a number here: "))
