@@ -52,5 +52,5 @@ total = 0 # plceholder for the total value of the inventory
 for item in inventory:
     # Calculate and display the total value of the inventory by multiplying the quantity and price of each item
     total += inventory[item][0] * inventory[item][1]
-print(f"Total value of inventory: ${total: .2f}")
+print(f"Total value of inventory: ${total: .2f}") # Round total to 2 decimal places
 
