@@ -1,3 +1,8 @@
+'''
+Author: Sarina Iqbal
+Python Assignment: Hands on Python Data Structures
+Task 3
+'''
 tup = ("Interstellar", "Faded", "Harry Potter")
 
 print(f"Favorite things: {tup}") # Print the tuple
