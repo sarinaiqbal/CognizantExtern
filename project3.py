@@ -53,3 +53,4 @@ print(f"Your password strength score is: {score} (10: strongest; 0: weakest)")
 # Example runs:
 # The password: python gets a score of 0 as it has less than 8 characters.
 # The password: Python13 gets a score of 8 as it does not have special characters.
+# The password: ra!nyday gets a score of 6 as it does not have digits and upper case characters.
