@@ -1,7 +1,7 @@
 """
 Author: Sarina Iqbal
 Python Project 3: Password Strength Checker
-A Program to check password strengths. Takes input for a password and determines 
+A program to check password strength. Takes input for a password and determines 
 its strength based on given requirements. A score of 10 indicates the strongest 
 and 0 is the weakest password. 
 """
