@@ -13,4 +13,4 @@ while True: # loop to keep asking for number in case of error
         print("Invalid input. Please enter a valid number.")
     else: # if no errors, print result and break out of loop
         print(f"100 divided by {number} is {result:.2f}") # rounding result to 2 decimal places
-        break
+        break # break out of loop when division is complete without errors
