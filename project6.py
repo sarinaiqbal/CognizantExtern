@@ -1,8 +1,8 @@
 '''
 Author: Sarina Iqbal
 Python Project: Calculator with Exception Handling
-Description: Simulates a calculator that carries out four mathematical operations
-and handles exceptions gracefully, also logging those into a text file. 
+Description: Simulates a calculator that carries out four mathematical operations using 
+two integer inputs and handles exceptions gracefully, also logging those into a text file. 
 '''
 
 import logging 
@@ -26,12 +26,12 @@ while choice != 5: #continue asking until user wishes to exit
     if choice == 1: #addition
         try:
             # ask for inputs and try to add
-            num1 = int(input("Enter the first number: "))
-            num2 = int(input("Enter the second number: "))
+            num1 = int(input("Enter the first integer: "))
+            num2 = int(input("Enter the second integer: "))
             add = num1 + num2
         except ValueError:
-            print("Invalid input! Please enter a valid number.")
-            logger.error("ValueError occurred: invalid numeral.") #logging ValueError to file
+            print("Invalid input! Please enter a valid integer.")
+            logger.error("ValueError occurred: invalid integer.") #logging ValueError to file
         else:
             # If operation passes with no errors, print result
             print(f"The summation is = {add}.")
@@ -39,12 +39,12 @@ while choice != 5: #continue asking until user wishes to exit
     if choice == 2: # subtraction
         try:
             # ask for inputs and try to subtract
-            num1 = int(input("Enter the first number: "))
-            num2 = int(input("Enter the second number: "))
+            num1 = int(input("Enter the first integer: "))
+            num2 = int(input("Enter the second integer: "))
             sub = num1 - num2
         except ValueError:
-            print("Invalid input! Please enter a valid number.")
-            logger.error("ValueError occurred: invalid numeral.")
+            print("Invalid input! Please enter a valid integer.")
+            logger.error("ValueError occurred: invalid integer.")
         else:
             # If operation passes with no errors, print result
             print(f"The difference is = {sub}.")
@@ -52,12 +52,12 @@ while choice != 5: #continue asking until user wishes to exit
     if choice == 3: # multiplication
         try:
             # ask for inputs and try to multiply
-            num1 = int(input("Enter the first number: "))
-            num2 = int(input("Enter the second number: "))
+            num1 = int(input("Enter the first integer: "))
+            num2 = int(input("Enter the second integer: "))
             mult = num1 * num2
         except ValueError:
-            print("Invalid input! Please enter a valid number.")
-            logger.error("ValueError occurred: invalid numeral.")
+            print("Invalid input! Please enter a valid integer.")
+            logger.error("ValueError occurred: invalid integer.")
         else:
             # If operation passes with no errors, print result
             print(f"The product is = {mult}.")
@@ -65,15 +65,15 @@ while choice != 5: #continue asking until user wishes to exit
     if choice == 4: #division
         try:
             # ask for inputs and try to divide
-            num1 = int(input("Enter the first number: "))
-            num2 = int(input("Enter the second number: "))
+            num1 = int(input("Enter the first integer: "))
+            num2 = int(input("Enter the second integer: "))
             div = num1/num2
         except ZeroDivisionError:
             print("Oops! Division by zero is not allowed.")
             logger.error("ZeroDivisionError occurred: division by zero.") #logging ZeroDivisionError to file
         except ValueError:
-            print("Invalid input! Please enter a valid number.")
-            logger.error("ValueError occurred: invalid numeral.")
+            print("Invalid input! Please enter a valid integer.")
+            logger.error("ValueError occurred: invalid integer.")
         else:
             # If operation passes with no errors, print result
             print(f"The quotient is = {div:.2f}.")# Round result to 2 decimal places
